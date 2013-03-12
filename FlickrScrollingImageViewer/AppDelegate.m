@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  FlickrScrollingImageViewer
 //
-//  Created by Hashir Baqai on 3/12/13.
+//  Created by Kathleen Robertson on 3/12/13.
 //  Copyright (c) 2013 Kathleen Robertson. All rights reserved.
 //
 
