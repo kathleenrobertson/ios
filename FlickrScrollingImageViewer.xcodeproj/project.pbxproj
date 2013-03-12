@@ -16,8 +16,9 @@
 		3FBBEF6E16EFF3C1004179BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBEF6D16EFF3C1004179BC /* Default.png */; };
 		3FBBEF7016EFF3C1004179BC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBEF6F16EFF3C1004179BC /* Default@2x.png */; };
 		3FBBEF7216EFF3C1004179BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBEF7116EFF3C1004179BC /* Default-568h@2x.png */; };
-		3FBBEF7516EFF3C1004179BC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBEF7316EFF3C1004179BC /* MainStoryboard.storyboard */; };
-		3FBBEF7816EFF3C1004179BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBEF7716EFF3C1004179BC /* ViewController.m */; };
+		3FBBEF8316EFF408004179BC /* ScrollingImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBEF7F16EFF407004179BC /* ScrollingImageViewController.m */; };
+		3FBBEF8416EFF408004179BC /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBEF8216EFF408004179BC /* FlickrFetcher.m */; };
+		3FBBEF8616EFF4B5004179BC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBBEF8516EFF4B5004179BC /* MainStoryboard_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +35,12 @@
 		3FBBEF6D16EFF3C1004179BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3FBBEF6F16EFF3C1004179BC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3FBBEF7116EFF3C1004179BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3FBBEF7416EFF3C1004179BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3FBBEF7616EFF3C1004179BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3FBBEF7716EFF3C1004179BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FBBEF7E16EFF407004179BC /* ScrollingImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingImageViewController.h; sourceTree = "<group>"; };
+		3FBBEF7F16EFF407004179BC /* ScrollingImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingImageViewController.m; sourceTree = "<group>"; };
+		3FBBEF8016EFF407004179BC /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		3FBBEF8116EFF408004179BC /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		3FBBEF8216EFF408004179BC /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		3FBBEF8516EFF4B5004179BC /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +87,12 @@
 		3FBBEF6116EFF3C1004179BC /* FlickrScrollingImageViewer */ = {
 			isa = PBXGroup;
 			children = (
-				3FBBEF6A16EFF3C1004179BC /* AppDelegate.h */,
-				3FBBEF6B16EFF3C1004179BC /* AppDelegate.m */,
-				3FBBEF7316EFF3C1004179BC /* MainStoryboard.storyboard */,
-				3FBBEF7616EFF3C1004179BC /* ViewController.h */,
-				3FBBEF7716EFF3C1004179BC /* ViewController.m */,
+				3FBBEF8516EFF4B5004179BC /* MainStoryboard_iPhone.storyboard */,
+				3FBBEF7E16EFF407004179BC /* ScrollingImageViewController.h */,
+				3FBBEF7F16EFF407004179BC /* ScrollingImageViewController.m */,
+				3FBBEF8016EFF407004179BC /* FlickrAPIKey.h */,
+				3FBBEF8116EFF408004179BC /* FlickrFetcher.h */,
+				3FBBEF8216EFF408004179BC /* FlickrFetcher.m */,
 				3FBBEF6216EFF3C1004179BC /* Supporting Files */,
 			);
 			path = FlickrScrollingImageViewer;
@@ -96,6 +101,8 @@
 		3FBBEF6216EFF3C1004179BC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3FBBEF6A16EFF3C1004179BC /* AppDelegate.h */,
+				3FBBEF6B16EFF3C1004179BC /* AppDelegate.m */,
 				3FBBEF6316EFF3C1004179BC /* FlickrScrollingImageViewer-Info.plist */,
 				3FBBEF6416EFF3C1004179BC /* InfoPlist.strings */,
 				3FBBEF6716EFF3C1004179BC /* main.m */,
@@ -162,7 +169,7 @@
 				3FBBEF6E16EFF3C1004179BC /* Default.png in Resources */,
 				3FBBEF7016EFF3C1004179BC /* Default@2x.png in Resources */,
 				3FBBEF7216EFF3C1004179BC /* Default-568h@2x.png in Resources */,
-				3FBBEF7516EFF3C1004179BC /* MainStoryboard.storyboard in Resources */,
+				3FBBEF8616EFF4B5004179BC /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +182,8 @@
 			files = (
 				3FBBEF6816EFF3C1004179BC /* main.m in Sources */,
 				3FBBEF6C16EFF3C1004179BC /* AppDelegate.m in Sources */,
-				3FBBEF7816EFF3C1004179BC /* ViewController.m in Sources */,
+				3FBBEF8316EFF408004179BC /* ScrollingImageViewController.m in Sources */,
+				3FBBEF8416EFF408004179BC /* FlickrFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +196,6 @@
 				3FBBEF6516EFF3C1004179BC /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3FBBEF7316EFF3C1004179BC /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FBBEF7416EFF3C1004179BC /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
